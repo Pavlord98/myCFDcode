@@ -1,0 +1,13 @@
+0.1 //mu
+1000 //rho
+10 //nx
+10 //ny
+1 //Lx
+1 //Ly
+1 //ULid
+0 //uinit
+0 //vinit
+0 //pinit
+0 //alphau
+0.3 //alphap
+
