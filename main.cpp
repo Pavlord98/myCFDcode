@@ -4,14 +4,15 @@
 #include <string>
 #include "readInput.h"
 #include <algorithm>
- 
+#include "readBoundary.h"
+
 using Eigen::MatrixXd;
  
 int main()
 {
   // reading user inputs
   parameters par{getParameters()};
-
+  boundaries bon(getBoundaries());
   // creating empty matrices
   #include "empyMatricesAndVectors.h"
 
@@ -45,5 +46,7 @@ int main()
     }
   }
 
-  std::cout << anu.rows();
+  
+
+
 }
