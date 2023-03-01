@@ -12,12 +12,20 @@ int main()
 {
     // reading user inputs
   parameters par{getParameters()};
+  boundaries bon(getBoundaries());
 
   // creating empty matrices
   #include "empyMatricesAndVectors.h"
      
-    std::cout << typeid(mn(0)).name() << '\n';
-    std::cout << typeid(2.0).name() << '\n';
-    std::cout << std::max(mn(0),2.0) << '\n';
-    //std::cout << std::max(double(mn(0)),2);
+  or (int j = 0; j<par.nx; j++)
+  {
+    for (int i = 0; i<par.ny; i++)
+    {
+      cellNumber = j*par.nx + i;
+
+      // North face
+      [anu(cellNumber), spu(cellNumber), suu(cellNumber,1)] = northMomentum(mn(cellNumber),par.uLid, bon.top);
+
+    }
+  }
 }
