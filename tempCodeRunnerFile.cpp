@@ -1,0 +1,1 @@
+MatrixXd p = MatrixXd::Ones(par.nx*par.ny,1);

@@ -18,15 +18,28 @@ auto northMomentum(mn(cellNumber),par.uLid, bon.top)
 string_code hashit (std::string const& inString) {
     if (inString == "wall") return wall;
     if (inString == "movingWall") return movingWall;
-    ...
+    if (inString == "vInlet") return vInlet;
+    if (inString == "pOutlet") return pOutlet;
 }
 
 void foo() {
     switch (hashit(stringValue)) {
-    case eFred:
-        ...
-    case eBarney:
-        ...
+    case wall:
+    {
+        
+    }
+    case movingWall:
+    {
+
+    }   
+    case vInlet:
+    {
+
+    }
+    case pOutlet
+    {
+
+    } 
     }
 }
 }

@@ -16,6 +16,11 @@ int main()
   // creating empty matrices
   #include "empyMatricesAndVectors.h"
 
+  // Inital guess for p, u and v
+  MatrixXd u = MatrixXd::Ones(par.nx*par.ny,1);
+  MatrixXd v = MatrixXd::Ones(par.nx*par.ny,1);
+  MatrixXd p = MatrixXd::Ones(par.nx*par.ny,1);
+
   int cellNumber{0};
 
   for (int j = 0; j<par.nx; j++)
