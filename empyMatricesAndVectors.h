@@ -73,6 +73,7 @@
   MatrixXd Ap = MatrixXd::Zero(par.nx*par.ny, par.nx*par.ny);
   MatrixXd Bp = MatrixXd::Zero(par.nx*par.ny,1);
 
+  
   // Residuals
 
   //Point Monitors

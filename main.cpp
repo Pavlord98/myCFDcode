@@ -13,6 +13,7 @@ int main()
   // reading user inputs
   parameters par{getParameters()};
   boundaries bon(getBoundaries());
+  
   // creating empty matrices
   #include "empyMatricesAndVectors.h"
 
@@ -49,6 +50,7 @@ int main()
       // East Face
       //if ()/
     }
+    
   }
 
   
